@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectComponent },
   { path: 'login', component: LoginComponent },
   { path: '404', component: WildcardComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: '', component: LoginComponent },
   { path: '**', redirectTo: '404' }
 ]
 
